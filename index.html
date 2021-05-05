@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=New+Tegomin&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="title">
+            <h1>Face expression detector</h1>
+        </div>
+        <div class="burger" id="burger">
+            <button class="burger-btn"><i class="fas fa-bars"></i></button>
+        </div>
+        <ul class="options">
+            <li class="option off">Rectangle</li>
+            <li class="option off">Landmarks</li>
+            <li class="option off">Expressions</li>
+        </ul>
+    </header>
+    <div class="dark-mode" id="dark-mode">
+        <h1>Dark mode</h1>
+        <input type="checkbox">
+    </div>
+    <video id="video" width="720" height="560" autoplay muted></video>
+</body>
+</html>
